@@ -60,7 +60,7 @@ loop do
       IO.copy_stream(file, socket)
     end
   else
-    message = "Ah ah ah, you didn't say the magic word\n"
+    message = "Do not try and bend the spoon. That's impossible. Instead... only try to realize the truth.\n"
 
     # respond with a 404 error code to indicate the file does not exist
     socket.print "HTTP/1.1 404 Not Found\r\n" +
